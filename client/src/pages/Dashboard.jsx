@@ -19,7 +19,7 @@ export default function Dashboard() {
     }
     const data = async () => {
       try {
-        const response = await axios.get(`http://localhost:1307/api/transactions/get/${id}`)
+        const response = await axios.get(`https://tracker-1ouu.onrender.com/api/transactions/get/${id}`)
         console.log(response)
         setResult(response.data.transactions)
       } catch (error) {
