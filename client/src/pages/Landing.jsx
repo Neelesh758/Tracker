@@ -26,7 +26,7 @@ export default function Landing() {
   const handleSignup = async (e)=>{
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:1307/api/user/signup',{
+      const response = await axios.post('https://tracker-1ouu.onrender.com/api/user/signup',{
         userName,
         email,
         password,
@@ -53,7 +53,7 @@ export default function Landing() {
   const handleLogin = async (e) =>{
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:1307/api/user/login',{
+      const response = await axios.post('https://tracker-1ouu.onrender.com/api/user/login',{
         email,
         password,
       })
