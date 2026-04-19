@@ -46,7 +46,7 @@ export default function Navbar() {
     formData.append("image", selectedFile);
 
     const res = await axios.put(
-      `http://localhost:1307/api/profileimg/upload/${data._id}`,
+      `https://tracker-1ouu.onrender.com/api/profileimg/upload/${data._id}`,
       formData
     );
 
