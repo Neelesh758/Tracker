@@ -22,7 +22,7 @@ export default function Expense() {
     const data = async () => {
       setLoading(true)
       try {
-        const response = await axios.get(`http://localhost:1307/api/transactions/get/${id}`)
+        const response = await axios.get(`https://tracker-1ouu.onrender.com/api/transactions/get/${id}`)
         setResult(response.data.transactions)
       } catch (error) {
         console.log(error)
