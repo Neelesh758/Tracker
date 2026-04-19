@@ -14,7 +14,7 @@ export default function AddIncome() {
   const hnadlesubmit = async (e)=>{
     e.preventDefault();
     try {
-      const res = await axios.post(`http://localhost:1307/api/transactions/create/${id}`,{
+      const res = await axios.post(`https://tracker-1ouu.onrender.com/api/transactions/create/${id}`,{
         category,
         amount,
         type,
