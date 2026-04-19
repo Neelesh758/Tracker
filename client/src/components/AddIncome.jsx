@@ -21,6 +21,7 @@ export default function AddIncome() {
         description
       })
       toast.success(res.data.message || "Transaction Added Successfully" )
+       window.location.reload()
       setAmount(Number);
       setCategory("");
       setType("Income");
